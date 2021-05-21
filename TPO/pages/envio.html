@@ -47,48 +47,56 @@
                 <h2>Solicitar envío</h2>
                 <form action="show_data.html" target="_blank" method="POST">
 
+                    <div id="contenedor">
+                        <div class="item item-1">Capital Federal</div>
+                        <div class="item item-2">GBA Norte</div>
+                        <div class="item item-3">GBA Sur</div>
+                        <div class="item item-3">GBA Este</div>
+                        <div class="item item-3">GBA Oeste</div>
+                    </div>
 
-                        <label for="email">Usuario (dirección de email)</label>
-                        <input type="email" id="email" name="email" placeholder="Ingrese su usuario aquí...">
-                        <br><br>
+                    <label for="email">Usuario (dirección de email)</label>
+                    <input type="email" id="email" name="email" placeholder="Ingrese su usuario aquí...">
+                    <br><br>
 
-                        <label for="clave">Contraseña: </label><input type="password" name="clave"> <br><br>
+                    <label for="clave">Contraseña: </label><input type="password" name="clave"> <br><br>
 
-                        <label for="servicio">Tipo de servicio:</label>
-                        <select id="servicio" name="servicio">
-                            <option value="mensajeria">Mensajería</option>
-                            <option value="flete">Flete</option>
-                        </select> <br><br>
+                    <label for="servicio">Tipo de servicio:</label>
+                    <select id="servicio" name="servicio">
+                        <option value="mensajeria">Mensajería</option>
+                        <option value="flete">Flete</option>
+                    </select> <br><br>
 
-                        <label for="bultos">Cantidad de bultos</label>
-                        <input type="number" id="bultos" name="bultos" min="1" max="20"> <br><br>
+                    <label for="bultos">Cantidad de bultos</label>
+                    <input type="number" id="bultos" name="bultos" min="1" max="20"> <br><br>
 
-                        <label for="descripcion">Descripción</label> <textarea name="sugerencia" rows="4"
-                            cols="50">Si hay materiales frágiles no olvide identificarlos...</textarea> <br><br>
+                    <label for="descripcion">Descripción</label> <textarea name="sugerencia" rows="4"
+                        cols="50">Si hay materiales frágiles no olvide identificarlos...</textarea> <br><br>
 
+                    <label for="address">Dirección origen: </label>
+                    <input size="30" type="text" name="firstname"
+                        placeholder="Ingrese desde donde se realiza el envío...">
+                    <br><br>
 
-                        <label for="address">Dirección origen: </label>
-                        <input size="30" type="text" name="firstname"
-                            placeholder="Ingrese desde donde se realiza el envío...">
-                        <br><br>
+                    <label for="address">Dirección destino: </label>
+                    <input size="30" type="text" name="firstname"
+                        placeholder="Ingrese hacía donde se realiza el envío...">
+                    <br><br>
 
-                        <label for="address">Dirección destino: </label>
-                        <input size="30" type="text" name="firstname"
-                            placeholder="Ingrese hacía donde se realiza el envío...">
-                        <br><br>
-
-                        <div id="boton">
-                            <input type="submit" value="Cotizar servicio"><br><br>
-                            <input type="reset" value="Borrar datos ingresados"> <br><br>
-                        </div>
+                    <div id="boton">
+                        <input type="submit" value="Cotizar servicio"><br><br>
+                        <input type="reset" value="Borrar datos ingresados"> <br><br>
+                    </div>
                 </form>
             </div>
 
             <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
                 <img src="../imgs/mensajero.png" width="500" height="500"> <br> <br>
 
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105073.26483401326!2d-58.50333890387618!3d-34.61580373585645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20CABA!5e0!3m2!1ses!2sar!4v1621579651591!5m2!1ses!2sar" width="500" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-           </div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105073.26483401326!2d-58.50333890387618!3d-34.61580373585645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20CABA!5e0!3m2!1ses!2sar!4v1621579651591!5m2!1ses!2sar"
+                    width="500" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
         </div>
     </div>
     </div>

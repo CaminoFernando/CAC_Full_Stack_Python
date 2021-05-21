@@ -84,13 +84,29 @@
     text-align: center;
   }
 
-  
+  #contenedor {
+    text-align: center;
+    display: flex;
+    flex-direction:row;
+    }
+
+  .item {
+    color:white;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 1rem;
+    }
+
+  .item:hover {
+    color: gainsboro
+  }
+
   [class*="col-"] {
     float: left;
     padding: 15px;
   }
-  
-  
+    
   /* For mobile phones: */
   [class*="col-"] {
     width: 100%;
