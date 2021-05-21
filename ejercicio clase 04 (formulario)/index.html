@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+
+<!--
+• <input type="text"> permite cargar una cadena alfanumérica
+• <input type="number"> solo permite seleccionar un número
+• <input type="date"> ofrece un calendario para cargar la fecha
+• <input type="password"> oculta el dato cargado
+• <input type="email"> valida que sea un mail
+• <input type="url"> valida que sea una url
+• <input type="image"> define una imagen como botón de envío
+• <input type="tel"> define un campo para ingresar un número de teléfono
+• <input type="file"> define un campo de selección de archivo
+• <input type="button"> activa un JavaScript cuando se hace clic en él
+• <input type="checkbox"> permite elegir varias opciones
+• <input type="radio"> permite elegir una sola opción
+• <input type="range"> define un control de rango (como un control deslizante)
+• <input type="submit"> botón enviar
+-->
+
+<body bgcolor="#11BB3B">
+    <h1 style="color: brown;">Registro vacuna covid-19</h1>
+    <form action="show_data.html" target="_blank" method="POST">
+        <label for="firstname">Nombre: </label>
+        <input size="30" type="text" name="firstname" placeholder="Ingrese su nombre aqui..."> <br><br>
+
+        <label for="lastname">Apellido:</label>
+        <input size="30" type="text" name="lastname" placeholder="Ingrese su apellido aqui..."> <br><br>
+
+        Género:
+        <input type="radio" name="gender" value="hombre" checked>Hombre
+        <input type="radio" name="gender" value="Mujer">Mujer
+        <input type="radio" name="gender" value="Otro"> Otro <br><br>
+
+        <label for="BirthDate">Fecha Nac. (mm/dd/yyyy): </label> <input type="date" name="birthdate"> <br><br>
+
+        <label for="telefono">Telefono: </label><input type="tel" name="telefono"
+            placeholder="ingrese su telefono aqui ...."> <br><br>
+
+        <label for="email">Direccion de email:</label>
+        <input type="email" id="email" name="email" placeholder="Ingrese su dirección de email aqui...">
+        <br><br>
+
+        <label for="url">Perfil de facebook: </label><input type="url" name="url"> <br><br>
+
+        Enfermedades preexistentes
+        <input type="button" value="Si tiene dudas haga click aquí" onclick="msg()"> <br>
+        <input type="checkbox" name="asma" value="asma"> Asma
+        <input type="checkbox" name="epoc" value="epoc"> Epoc
+        <input type="checkbox" name="otras" value="otras"> Otras <br><br>
+
+        <label for="myfile">Adjuntar certificaciones médicas (solo formato png o jpg):</label>
+        <input type="file" id="certificaciones" name="certificaciones" multiple accept="image/png, image/jpg"> <br><br>
+
+        <label for="covidprevio">Tuvo covid-19 previamente? cuantas veces?:</label>
+        <input type="number" id="covidprevio" name="covidprevio" min="0" max="5"> <br><br>
+
+        <label for="procedenciaVacuna">Procedencia vacuna:</label>
+        <select id="procedenciaVacuna" name="procedenciaVacuna">
+            <option value="Rusa">Rusa</option>
+            <option value="China">China</option>
+        </select> <br><br>
+
+        <label for="clave">Inserte clave de vacunación provista: </label><input type="password" name="clave"> <br><br>
+
+        <input type="checkbox" name="cond">Acepto los términos y condiciones. <br><br>
+
+        <label for="vol">Conformidad respecto al servicio brindado:</label>
+        <input type="range" id="vol" name="vol" min="0" max="100"> <br><br>
+
+        Sugerencias para mejorar el servicio <br> <textarea name="sugerencia" rows="4"
+            cols="50">Escribe tu sugerencia aquí...</textarea> <br><br>
+
+        <b>Para eviar la infomación haga click en la siguiente imágen o en el botón que dice "Enviar" </b> <br>
+        <input type="image"
+            src="https://www.paho.org/sites/default/files/styles/flexslider_full/public/hero/2020-03/covid-19-1190x574-2-full.jpg"
+            alt="Submit" width="100" height="50"> <br><br>
+
+        <input type="submit" value="Enviar"><br><br>
+        <input type="reset" value="Borrar datos ingresados"> <br><br>
+
+    </form>
+
+    <script>
+        function msg() {
+            alert("Si no está seguro consulte a su médico de cabecera");
+        }
+    </script>
+
+</body>
+
+</html>
